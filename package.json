@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node ./node_modules/tsx/dist/cli.mjs server.ts",
-    "build": "node ./node_modules/vite/bin/vite.js build && node ./node_modules/esbuild/bin/esbuild server.ts --bundle --platform=node --format=esm --outfile=server.js --packages=external",
+    "build": "node ./node_modules/vite/bin/vite.js build && node ./scripts/bundle-server.mjs",
     "start": "node ./node_modules/tsx/dist/cli.mjs server.ts",
     "preview": "node ./node_modules/vite/bin/vite.js preview",
     "clean": "node --eval \"import('node:fs').then(fs => fs.rmSync('dist', { recursive: true, force: true }))\"",
