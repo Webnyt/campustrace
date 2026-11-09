@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: white !important;
+  }
+  header, section, nav, footer, .category-btn, #itemsGrid, .print\:hidden {
+    display: none !important;
+  }
+}

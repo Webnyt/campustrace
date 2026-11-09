@@ -1,0 +1,6 @@
+{
+  "name": "CampusTrace - Smart Campus Lost & Found Hub",
+  "description": "Modern university campus lost and found platform to report, search, claim, and recover lost student belongings across lecture halls, libraries, and complexes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

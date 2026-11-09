@@ -1,0 +1,88 @@
+{
+  "entities": {
+    "users": {
+      "title": "UserProfile",
+      "description": "Authenticated campus student or staff profile",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Unique user ID" },
+        "email": { "type": "string", "description": "University email address" },
+        "displayName": { "type": "string", "description": "User full name" },
+        "photoURL": { "type": "string", "description": "Avatar URL" },
+        "role": { "type": "string", "description": "Role (student or staff)" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      },
+      "required": ["uid", "email"]
+    },
+    "categories": {
+      "title": "Category",
+      "description": "Item categorization taxonomy",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "description": "Category numerical ID" },
+        "name": { "type": "string", "description": "Category name" },
+        "icon": { "type": "string", "description": "Icon identifier" }
+      },
+      "required": ["id", "name"]
+    },
+    "items": {
+      "title": "LostFoundItem",
+      "description": "Campus lost or found item record",
+      "type": "object",
+      "properties": {
+        "item_name": { "type": "string", "description": "Name or title of item" },
+        "category_id": { "type": "number", "description": "Associated category ID" },
+        "category_name": { "type": "string", "description": "Category label" },
+        "description": { "type": "string", "description": "Detailed item description" },
+        "location_found": { "type": "string", "description": "Campus location where item was found or lost" },
+        "finder_contact": { "type": "string", "description": "Contact info or office drop-off" },
+        "finder_name": { "type": "string", "description": "Reporter display name" },
+        "finder_id": { "type": "string", "description": "Reporter UID if authenticated" },
+        "image_path": { "type": "string", "description": "Photo URL" },
+        "item_status": { "type": "string", "enum": ["Unclaimed", "Claimed"], "description": "Claim state" },
+        "item_type": { "type": "string", "enum": ["found", "lost"], "description": "Whether item was found or reported lost" },
+        "dropoff_location": { "type": "string", "description": "Desk or office where item is held" },
+        "claimed_by": { "type": "string", "description": "Name or student ID of claimant" },
+        "claim_notes": { "type": "string", "description": "Verification notes" },
+        "claimed_date": { "type": "string", "description": "Timestamp when claimed" },
+        "date_posted": { "type": "string", "description": "Submission ISO timestamp" }
+      },
+      "required": ["item_name", "category_id", "location_found", "item_status"]
+    },
+    "email_alerts": {
+      "title": "EmailAlertSubscription",
+      "description": "Saved alert criteria for instant notifications",
+      "type": "object",
+      "properties": {
+        "user_email": { "type": "string", "description": "Recipient email address" },
+        "user_name": { "type": "string", "description": "Recipient name" },
+        "keyword": { "type": "string", "description": "Search keyword query" },
+        "category_id": { "type": "string", "description": "Filtered category ID" },
+        "category_name": { "type": "string", "description": "Filtered category label" },
+        "location_filter": { "type": "string", "description": "Campus location filter" },
+        "alert_type": { "type": "string", "description": "Immediate or digest" },
+        "active": { "type": "boolean", "description": "Subscription active toggle" },
+        "created_at": { "type": "string", "description": "ISO subscription timestamp" }
+      },
+      "required": ["user_email", "keyword"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "users" },
+      "description": "User profile documents"
+    },
+    "/categories/{categoryId}": {
+      "schema": { "$ref": "categories" },
+      "description": "Campus item category taxonomy"
+    },
+    "/items/{itemId}": {
+      "schema": { "$ref": "items" },
+      "description": "Public lost and found items"
+    },
+    "/email_alerts/{alertId}": {
+      "schema": { "$ref": "email_alerts" },
+      "description": "Notification alert subscriptions"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "category_id": 1,
+      "category_name": "Electronics",
+      "icon": "Laptop"
+    },
+    {
+      "category_id": 2,
+      "category_name": "IDs & Cards",
+      "icon": "CreditCard"
+    },
+    {
+      "category_id": 3,
+      "category_name": "Books & Notes",
+      "icon": "BookOpen"
+    },
+    {
+      "category_id": 4,
+      "category_name": "Personal Items",
+      "icon": "Heart"
+    },
+    {
+      "category_id": 5,
+      "category_name": "Keys & Wallets",
+      "icon": "Key"
+    },
+    {
+      "category_id": 6,
+      "category_name": "Clothing & Bags",
+      "icon": "Shirt"
+    }
+  ],
+  "items": [
+    {
+      "item_id": 1,
+      "category_id": 1,
+      "category_name": "Electronics",
+      "item_name": "Casio Scientific Calculator",
+      "description": "FX-991ES Plus in black casing with owner initials \"KA\" etched lightly on the battery cover. Battery still working.",
+      "location_found": "Science Complex Lecture Hall 3",
+      "finder_contact": "0241234567",
+      "finder_name": "Kwame A.",
+      "dropoff_location": "Science Complex Security Desk (Desk #1)",
+      "image_path": "https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?auto=format&fit=crop&w=600&q=80",
+      "item_status": "Unclaimed",
+      "item_type": "found",
+      "date_posted": "2026-11-05T02:31:26.434Z"
+    },
+    {
+      "item_id": 2,
+      "category_id": 2,
+      "category_name": "IDs & Cards",
+      "item_name": "University Student ID Card",
+      "description": "BSc Information Technology Level 200 student ID card. Blue lanyard with campus crest.",
+      "location_found": "Central Cafeteria",
+      "finder_contact": "0559876543",
+      "finder_name": "Cafeteria Staff (Auntie Mary)",
+      "dropoff_location": "Central Cafeteria Cashier Counter",
+      "image_path": "/images/student_id_card.jpg",
+      "item_status": "Unclaimed",
+      "item_type": "found",
+      "date_posted": "2026-11-04T18:31:26.434Z"
+    },
+    {
+      "item_id": 3,
+      "category_id": 3,
+      "category_name": "Books & Notes",
+      "item_name": "Data Structures Spiral Notebook",
+      "description": "A4 handwritten study notes with green cover, contains red and blue pen diagrams on Binary Trees and Hash Tables.",
+      "location_found": "Main Library Reading Room",
+      "finder_contact": "0201112233",
+      "finder_name": "Library Circulation Desk",
+      "dropoff_location": "Main Library 2nd Floor Info Desk",
+      "image_path": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80",
+      "item_status": "Unclaimed",
+      "item_type": "found",
+      "date_posted": "2026-11-04T04:31:26.434Z"
+    },
+    {
+      "item_id": 4,
+      "category_id": 1,
+      "category_name": "Electronics",
+      "item_name": "Apple AirPods Pro (2nd Gen)",
+      "description": "White MagSafe charging case with faint sticker residue on the front and custom orange ear tips inside.",
+      "location_found": "Engineering Block B - 3rd Floor Computer Lab",
+      "finder_contact": "0245678901",
+      "finder_name": "Emmanuel O.",
+      "dropoff_location": "Held by finder (Call/WhatsApp to verify serial)",
+      "image_path": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=600&q=80",
+      "item_status": "Unclaimed",
+      "item_type": "found",
+      "date_posted": "2026-11-04T00:31:26.434Z"
+    },
+    {
+      "item_id": 5,
+      "category_id": 5,
+      "category_name": "Keys & Wallets",
+      "item_name": "Toyota Key Fob & Dorm Room B204 Key",
+      "description": "Black key bundle on a red woven Nike lanyard with dorm key #B204 and silver gym membership barcode tag.",
+      "location_found": "University Sports Complex Bleachers",
+      "finder_contact": "0543219876",
+      "finder_name": "Coach Mensah",
+      "dropoff_location": "Sports Pavilion Head Office",
+      "image_path": "https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=600&q=80",
+      "item_status": "Claimed",
+      "claimed_by": "Michael Boateng (ID: 10849201)",
+      "claimed_date": "2026-11-04T22:31:26.434Z",
+      "claim_notes": "Owner unlocked his dorm room and verified gym tag number matches record.",
+      "item_type": "found",
+      "date_posted": "2026-11-03T06:31:26.434Z"
+    },
+    {
+      "item_id": 6,
+      "category_id": 4,
+      "category_name": "Personal Items",
+      "item_name": "Hydro Flask 32oz Water Bottle",
+      "description": "Cobalt blue wide-mouth vacuum bottle covered in tech stickers (GitHub, Linux, NASA, campus robotics club).",
+      "location_found": "Student Union Hub - Quiet Study Lounge",
+      "finder_contact": "0278899001",
+      "finder_name": "Sarah D.",
+      "dropoff_location": "Student Union Help Desk",
+      "image_path": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
+      "item_status": "Unclaimed",
+      "item_type": "found",
+      "date_posted": "2026-11-02T23:31:26.434Z"
+    }
+  ],
+  "nextItemId": 7
+}
